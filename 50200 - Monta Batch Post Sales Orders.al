@@ -42,8 +42,8 @@ report 50200 "Monta Batch Post Sales Orders"
                     Window.Update(2, Round(Counter / CounterTotal * 10000, 1));
                 end;
 
-                "Sales Header".Invoice := true;
-                "Sales Header".Ship := true;
+                "Sales Header".Invoice := InvReq;
+                "Sales Header".Ship := ShipReq;
 
                 Clear(SalesPost);
 
